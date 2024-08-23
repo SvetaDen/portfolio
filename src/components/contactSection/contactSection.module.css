@@ -1,0 +1,177 @@
+.contactSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 0;
+    gap: 70px;
+}
+.contactSection_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /*flex: 1 0 0;*/
+    align-self: stretch;
+}
+.contactSection_formWrapper{
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+.contactSection_email_main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+.contactSection_title{
+    color: var(--white-color);
+    font-family: "Bebas Neue Regular",sans-serif;
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+.contactSection_socials{
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+.wrapper_icon{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+}
+.contactSection_socials img{
+    width: 32px;
+    height: 32px;
+}
+
+.contactSection_email{
+    color: var(--neutral-offwhite);
+    font-family: "Manrope Regular",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.contactSection_email a{
+    border-bottom:1px solid var(--light-green);
+    color: var(--white-color);
+    font-family: "Manrope Regular",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%
+}
+.createdBy{
+    display: block;
+    color: var(--neutral-offwhite);
+    font-family: "Manrope Medium",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.contactSection_form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+    color: var(--neutral-offwhite);
+    font-family: "Manrope Regular",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+.contactSection_formGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+
+}
+.contactSection_formGroup input,
+.contactSection_formGroup textarea {
+    /*display: flex;*/
+    /*padding: 12px 16px;*/
+    /*align-items: flex-start;*/
+    /*gap: 10px;*/
+    /*align-self: stretch;*/
+
+    /*background: var(--dark-charcoal);*/
+    /*border: none;*/
+    font-family: "Manrope Regular", sans-serif; /* Шрифт */
+    font-size: 16px; /* Размер шрифта */
+    color: var(--neutral-offwhite); /* Цвет текста */
+    background-color: var(--dark-charcoal); /* Фоновый цвет */
+    padding: 12px 16px; /* Внутренние отступы */
+    border-radius: 4px; /* Закругленные углы */
+    border: none;
+    width: 100%; /* Полная ширина */
+    box-sizing: border-box; /* Учет отступов и границ в ширине */
+}
+
+.contactSection_submitButton{
+    cursor: pointer;
+    display: flex;
+    height: 54px;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 100px;
+    background: var(--light-green);
+
+    color: var(--neutral-black);
+    font-family: "Manrope-Bold",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; 
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .contactSection{
+        gap: 48px;
+    }
+    .contactSection_title{
+        font-size: 60px;
+    }
+    .contactSection_email{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactSection{
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .contactSection_title{
+        font-size: 35px;
+    }
+    .contactSection_form{
+        font-size: 16px;
+    }
+    .createdBy{
+        display: none;
+    }
+    .min{
+        display: block;
+    }
+
+}

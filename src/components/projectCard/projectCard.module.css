@@ -1,0 +1,169 @@
+.projectCard {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+}
+
+.projectCard_imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    flex-shrink: 0;
+    background-color: var(--dark-charcoal);
+    border-radius: 12px;
+}
+
+.projectCard_image {
+    width: 486px;
+    height: 347px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 2px var(--neutral-black);
+}
+
+.projectCard_details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.projectCard_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.projectCard_title {
+    color: var(--white-color);
+    font-family: "Manrope-Medium", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.projectCard_description {
+    color: var(--neutral-offwhite);
+    font-family: "Manrope-Regular", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.projectCard_additionalInfo {
+    color: var(--white-color);
+    font-family: "Manrope-Regular", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+
+}
+
+.projectCard_additionalInfoTitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.projectCard_additionalInfoItem {
+    display: flex;
+    padding: 16px 0;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.projectCard_additionalInfoValue {
+    color: var(--neutral-offwhite);
+    font-family: "Manrope-Medium", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.projectCard_links {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+
+}
+
+.projectCard_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: var(--light-green);
+    background-color: #0A0A0A;
+    border: none;
+    font-family: "Manrope-Bold", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--light-green);
+    gap: 4px;
+}
+
+.projectCard_button img {
+    width: 26px;
+    height: 26px;
+}
+
+@media (max-width: 1024px) {
+    .projectCard_imageWrapper {
+        width: 439px;
+        height: 439px;
+        flex-shrink: 0;
+    }
+
+    .projectCard_image {
+        width: 350px;
+        height: 300px;
+    }
+    .projectCard_title {
+        font-size: 23px;
+    }
+    .projectCard_description {
+        font-size: 16px;
+    }
+    .projectCard_details {
+        gap: 10px;
+    }
+
+    .projectCard_additionalInfoTitle {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 768px) {
+    .projectCard {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .projectCard_imageWrapper{
+        width: 361px;
+        height: 361px;
+    }
+    .projectCard_image {
+        width: 320px;
+        height: 300px;
+    }
+}
+

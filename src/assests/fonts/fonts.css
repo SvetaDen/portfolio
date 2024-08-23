@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Manrope Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./Manrope-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Manrope Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('./Manrope-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Manrope SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('./Manrope-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Manrope Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./Manrope-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Bebas Neue Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./BebasNeueRegular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('./Inter-Medium.woff') format('woff');
+}
