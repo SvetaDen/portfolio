@@ -5,7 +5,15 @@ import {MdArrowOutward} from "react-icons/md";
 import icon_github from '../../assests/icons/icon-github.svg';
 
 
-const ProjectCard = ({id, image, title, description,year,role}:TItemProject) => {
+const ProjectCard = ({id, image, title, description,year,role,demo,link_git}:TItemProject) => {
+    const handleLiveDemo = () => {
+        window.open(demo, '_blank');
+    };
+
+    const handleSeeOnGithub = () => {
+        window.open(link_git, '_blank');
+    };
+
     return (
         <div className={styles.projectCard}>
             <div className={styles.projectCard_imageWrapper}>
@@ -29,12 +37,12 @@ const ProjectCard = ({id, image, title, description,year,role}:TItemProject) => 
                     </div>
 
                 </div>
-                <div className={styles.projectCard_links}>
+                <div className={styles.projectCard_links} onClick={handleLiveDemo}>
                     <button className={styles.projectCard_button}>
                         Live Demo
                         <MdArrowOutward size="24px"/>
                     </button>
-                    <button className={styles.projectCard_button}>
+                    <button className={styles.projectCard_button}  onClick={handleSeeOnGithub}>
                         See on Github
                         <img src={icon_github} alt="icon github"/>
                     </button>
