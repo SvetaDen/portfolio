@@ -143,6 +143,9 @@
     line-height: 100%; 
     text-transform: uppercase;
 }
+.min{
+    display: none;
+}
 
 @media (max-width: 1024px) {
     .contactSection{
