@@ -5,7 +5,7 @@ import {MdArrowOutward} from "react-icons/md";
 import icon_github from '../../assests/icons/icon-github.svg';
 
 
-const ProjectCard = ({id, image, title, description,year,role,demo,link_git}:TItemProject) => {
+const ProjectCard = ({image, title, description,year,role,demo,link_git}:TItemProject) => {
     const handleLiveDemo = () => {
         window.open(demo, '_blank');
     };
