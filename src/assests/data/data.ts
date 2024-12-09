@@ -50,7 +50,6 @@ export const dataProjects: TItemProject[] = [
         description: 'The Food Order Application allows users to browse a menu, add items to their cart, and place orders. This React-based application showcases an interactive front end along with a backend that processes and stores orders in a JSON file.',
         year: 2023,
         role: 'Front-end Developer',
-        // demo: '',
         link_git: 'https://github.com/SvetaDen/food-order-app'
     },
     {
