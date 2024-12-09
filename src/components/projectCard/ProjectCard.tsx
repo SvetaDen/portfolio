@@ -38,10 +38,15 @@ const ProjectCard = ({id, image, title, description,year,role,demo,link_git}:TIt
 
                 </div>
                 <div className={styles.projectCard_links} onClick={handleLiveDemo}>
-                    <button className={styles.projectCard_button}>
-                        Live Demo
-                        <MdArrowOutward size="24px"/>
-                    </button>
+                    {demo && (
+                        <button
+                            className={styles.projectCard_button}
+                            onClick={handleLiveDemo}
+                        >
+                            Live Demo
+                            <MdArrowOutward size="24px" />
+                        </button>
+                    )}
                     <button className={styles.projectCard_button}  onClick={handleSeeOnGithub}>
                         See on Github
                         <img src={icon_github} alt="icon github"/>

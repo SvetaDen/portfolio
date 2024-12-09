@@ -1,6 +1,7 @@
 import tic_tac_toy_screen from '../images/tic-tac-toe-screen.png';
 import react_create_project_screen from '../images/react-create-project-screen.png';
 import food_app_screen from '../images/food-app-screen.png';
+import main_page_portfolio from '../images/main-page_portfolio.jpg'
 import photo1 from '../images/carousel/desert_pic.jpg';
 import photo2 from '../images/carousel/f1_pic.jpg';
 import photo3 from '../images/carousel/me_and_my_husband_pic.jpg';
@@ -17,7 +18,7 @@ export type TItemProject = {
     description: string;
     year: number;
     role: string;
-    demo: string;
+    demo?: string;
     link_git: string
 }
 
@@ -49,17 +50,17 @@ export const dataProjects: TItemProject[] = [
         description: 'The Food Order Application allows users to browse a menu, add items to their cart, and place orders. This React-based application showcases an interactive front end along with a backend that processes and stores orders in a JSON file.',
         year: 2023,
         role: 'Front-end Developer',
-        demo: '',
+        // demo: '',
         link_git: 'https://github.com/SvetaDen/food-order-app'
     },
     {
         id: 114,
-        image: '',
+        image: main_page_portfolio,
         title: 'This website',
         description: 'Developed a personal portfolio website showcasing my skills and projects, built using TypeScript, React, CSS Modules, and React Slick for the photo gallery. The site is fully responsive and features a modern, clean design.',
         year: 2024,
         role: 'Front-end Developer',
-        demo: 'In progress',
+        // demo: 'In progress',
         link_git: 'https://github.com/SvetaDen/food-order-app'
     },
 
