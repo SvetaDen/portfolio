@@ -26,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({contactSectionRef}) => {
                         <div className={styles.dot}></div>
                     </button>
                     <div className={styles.wrapper_icon}>
-                        <a href="https://www.linkedin.com/in/sveta-denisyuk/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/svetlana-denisyuk/" target="_blank" rel="noopener noreferrer">
                             <img src={icon_linkedin} alt='icon linkedin' className={styles.icon}/>
                         </a>
                     </div>
