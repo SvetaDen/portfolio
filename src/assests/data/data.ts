@@ -59,8 +59,7 @@ export const dataProjects: TItemProject[] = [
         description: 'Developed a personal portfolio website showcasing my skills and projects, built using TypeScript, React, CSS Modules, and React Slick for the photo gallery. The site is fully responsive and features a modern, clean design.',
         year: 2024,
         role: 'Front-end Developer',
-        // demo: 'In progress',
-        link_git: 'https://github.com/SvetaDen/food-order-app'
+        link_git: 'https://github.com/SvetaDen/portfolio'
     },
 
 ]
