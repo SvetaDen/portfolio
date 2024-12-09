@@ -38,7 +38,7 @@ const Hero: React.FC<HeroProps> = ({contactSectionRef}) => {
                 </div>
             </div>
 
-            <img src={image} alt='Sveta Denisiuk'/>
+            <img src={image} alt='Sveta Denisiuk' className={styles.heroImage}/>
 
         </div>
     );

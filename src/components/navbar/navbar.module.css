@@ -1,103 +1,116 @@
-.navbar{
-    position: fixed;
-    width:100%;
-    height: 96px;
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1.5rem;
+    background-color: var(--near-black);
     color: var(--neutral-offwhite);
 }
-.navbar h2{
-    font-family: "Bebas Neue Regular",sans-serif;
-    font-size: 32px;
-    letter-spacing: -0.32px;
+
+.navbar h2 {
+    font-family: "Bebas Neue Regular", sans-serif;
+    font-size: 2rem;
+    letter-spacing: -0.02rem;
 }
 
-.nav_menu{
+.nav_menu {
     display: flex;
 }
 
-li{
+li {
     cursor: pointer;
-    padding:0 1rem;
+    padding: 0 1rem;
     font-family: 'Inter Medium', sans-serif;
-    letter-spacing: -0.48px;
-    font-size: 18px;
+    letter-spacing: -0.03rem;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
 }
 
-.hamburger{
-    display: none;
+li:hover{
+    color: var(--light-green);
 }
-.mobile_menu{
+
+.hamburger {
     display: none;
 }
 
+.mobile_menu {
+    background-color: var(--onyx);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear, transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media (max-width: 1024px) {
-    .navbar{
-        height: 80px ;
+    .navbar {
+        height: 5rem;
     }
 }
 
 @media (max-width: 768px) {
-    .navbar{
-        /*width: 90%;*/
-        /*padding: 0 0 0 20px*/
-
-    }
-    .navbar h2{
-        font-size: 25px;
+    .navbar h2 {
+        font-size: 1.5rem;
         letter-spacing: -0.32px;
     }
-    li{
-        font-size: 15px;
+
+    li {
+        font-size: 1rem;
         font-style: normal;
         font-weight: 500;
         line-height: 150%;
-        padding:0 0.5rem;
+        padding: 0 0.5rem;
     }
 }
 
 
 @media screen and (max-width: 576px) {
-    .nav_menu{
+    .nav_menu {
         display: none;
     }
-    .hamburger{
+
+    .hamburger {
         display: block;
         font-size: 1.5rem;
-        margin-top: 10px;
+        margin-top: 0.625rem;
         cursor: pointer;
     }
 
-    .mobile_menu{
-        background-color: var(--onyx);
-        position: absolute;
-        top: -100vh;
-        left: 0;
+    .mobile_menu {
         display: flex;
-        flex-direction: column;
-        margin: 0 1rem;
-        align-items: center;
-        width: 100%;
-    }
-    .active{
-        top: 80px;
     }
 
-    .mobile_menu li{
+    .active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.5s linear, transform 0.5s ease;
+        top: 5rem;
+    }
+
+    .mobile_menu li {
         display: block;
         font-size: 1.5rem;
         padding: 2.0rem 1rem;
         border-bottom: 1px solid var(--dark-grey);
         text-align: center;
     }
-    .mobile_menu li:hover{
-        transform: scale(1.5);
-        transition: 0.3s;
+
+    .mobile_menu li:hover {
+        color: var(--light-green);
     }
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './projectCard.module.css';
-import {TItemProject} from '../data';
+import {TItemProject} from '../../assests/data/data';
 import {MdArrowOutward} from "react-icons/md";
 import icon_github from '../../assests/icons/icon-github.svg';
 

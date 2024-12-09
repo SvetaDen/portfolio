@@ -20,7 +20,7 @@ const Navbar: React.FC<NavbarProps> = ({ heroRef, projectsRef, aboutMeRef, conta
         setNav(false);
     };
 
-    const handleNav = ()=> setNav(!nav);
+    const handleNav = ()=> setNav(nav=> !nav);
     return (
         <div className={styles.navbar}>
                 <h2>Sveta Denisiuk.</h2>
@@ -30,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = ({ heroRef, projectsRef, aboutMeRef, conta
                 <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
                 <li onClick={() => scrollToSection(contactSectionRef)}>Contacts</li>
             </ul>
-            <div className={styles.hamburger} onClick={handleNav}>
+            <div className={styles.hamburger} onClick={handleNav} aria-label="Toggle navigation">
                 {!nav ? (<HiOutlineMenu />) : (<AiOutlineClose/>)}
 
             </div>

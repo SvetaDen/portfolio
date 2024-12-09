@@ -1,7 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './aboutMe.module.css'
+import MoreAboutMe from "../moreAboutMe/MoreAboutMe";
+import Carousel from "../carousel/Carousel";
+import {images} from "../../assests/data/data";
+
 
 const AboutMe = () => {
+    const [showMore, setShowMore] = useState<boolean>(false);
+
+    const toggleMoreAboutMe = () => {
+        setShowMore(!showMore);
+    };
+
     return (
         <div className={styles.aboutMe}>
             <h1 className={styles.aboutMe_title}>About me</h1>
@@ -16,8 +26,16 @@ const AboutMe = () => {
                     and a bit of Designing. While I am not programming, I enjoy photography and
                     playing chess. Learning more to improve skill.
                 </p>
-                <button className={styles.aboutMe_button}>More about me</button>
+                <button onClick={toggleMoreAboutMe} className={styles.aboutMe_button}>
+                    {showMore ? 'Less about me' : 'More about me'}
+                </button>
             </div>
+            {showMore && (
+                <>
+                    <MoreAboutMe/>
+                    <Carousel images={images}/>
+                </>
+            )}
         </div>
     );
 };

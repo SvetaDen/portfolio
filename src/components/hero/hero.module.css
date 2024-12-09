@@ -1,119 +1,128 @@
-.hero{
+.hero {
     display: flex;
     justify-content: space-between;
-    padding: 30px 0 80px 0;
+    padding:1.8rem 0 5rem 0;
     border-bottom: 1px solid var(--neutral-offwhite);
-
 }
-.about_me{
+
+.about_me {
     display: flex;
-    padding-bottom: 22px;
+    padding-bottom: 1.3rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
-.about_me h1{
+.about_me h1 {
     align-self: stretch;
     text-transform: uppercase;
     color: var(--white-color);
-    font-family: "Bebas Neue Regular",sans-serif;
-    font-size: 90px;
+    font-family: "Bebas Neue Regular", sans-serif;
+    font-size: 5.6rem;
     line-height: 90%;
 }
 
-.about_me h2{
+.about_me h2 {
     color: var(--neutral-offwhite);
     font-family: "Manrope-Regular", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
-.contacts{
+
+.contacts {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
 }
-.contacts_btn{
+
+.contacts_btn {
     cursor: pointer;
     display: flex;
-    height: 54px;
-    padding: 20px 6px 20px 15px;
+    height: 3.3rem;
+    padding: 1.2rem 0.3rem 1.25rem 0.9rem;
     justify-content: center;
     align-items: center;
-    gap: 12px;
-    border-radius: 100px;
+    gap: 0.75rem;
+    border-radius: 6.25rem;
     background: var(--light-green);
 
     color: var(--neutral-black);
     font-family: "Manrope-Bold", sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     text-transform: uppercase;
 }
-.dot{
-    width: 11px;
-    height: 11px;
+
+.dot {
+    width: 0.7rem;
+    height: 0.7rem;
     border-radius: 100%;
     background-color: var(--near-black);
 }
-.wrapper_icon{
+
+.wrapper_icon {
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 54px;
-    height: 54px;
+    width: 3.4rem;
+    height: 3.4rem;
     background-color: var(--onyx);
     border-radius: 100%;
 }
-.icon{
-    width: 26px;
-    height: 26px;
+
+.icon {
+    width: 1.6rem;
+    height: 1.6rem;
 }
 
-img{
-    /*width: 600px;*/
+.heroImage {
     height: 663px;
-    border-radius: 16px;
+    border-radius: 1rem;
     object-fit: cover;
 }
 
 @media (max-width: 1024px) {
-    .hero{
-        gap: 10px;
+    .hero {
+        gap: 0.6rem;
     }
-    .about_me h1{
-        font-size: 70px;
+
+    .about_me h1 {
+        font-size: 4.3rem;
     }
-    img{
+
+    .heroImage {
         height: 443px;
-        border-radius: 16px;
+        border-radius: 1rem;
         object-fit: cover;
     }
 }
 
 @media (max-width: 768px) {
-    .about_me h1{
-        font-size: 50px;
+    .about_me h1 {
+        font-size: 3.5rem;
     }
-    .about_me h2{
-        font-size: 16px;
+
+    .about_me h2 {
+        font-size: 1.1rem;
     }
-    img{
+
+    .heroImage {
         height: 343px;
-        border-radius: 16px;
+        border-radius: 1.1rem;
         object-fit: cover;
     }
 }
 
 @media (max-width: 425px) {
-    .hero{
+    .hero {
         flex-direction: column;
-        padding-bottom: 60px;
+        padding-bottom: 5rem;
     }
-    .about_me{
-        gap:20px;
+
+    .about_me {
+        gap: 1.6rem;
     }
 
 }

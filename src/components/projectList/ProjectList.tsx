@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectCard from "../projectCard/ProjectCard";
 import styles from './projectList.module.css';
-import {dataProjects, TItemProject} from "../data";
+import {dataProjects, TItemProject} from "../../assests/data/data";
 
 
 const ProjectList = () => {

@@ -1,5 +1,4 @@
 import React, {useRef} from 'react';
-import './App.css';
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import Projects from "./components/projects/Projects";

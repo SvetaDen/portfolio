@@ -1,8 +1,7 @@
 .projectCard {
     display: flex;
     align-items: center;
-    gap: 48px;
-
+    gap: 3rem;
 }
 
 .projectCard_imageWrapper {
@@ -13,14 +12,14 @@
     height: 600px;
     flex-shrink: 0;
     background-color: var(--dark-charcoal);
-    border-radius: 12px;
+    border-radius: 0.75rem;
 }
 
 .projectCard_image {
     width: 486px;
     height: 347px;
     flex-shrink: 0;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     border: solid 2px var(--neutral-black);
 }
 
@@ -29,7 +28,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    gap: 32px;
+    gap: 2rem;
     align-self: stretch;
 }
 
@@ -37,14 +36,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 1rem;
     align-self: stretch;
 }
 
 .projectCard_title {
     color: var(--white-color);
     font-family: "Manrope-Medium", sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
@@ -53,7 +52,7 @@
 .projectCard_description {
     color: var(--neutral-offwhite);
     font-family: "Manrope-Regular", sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -65,13 +64,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 1rem;
     align-self: stretch;
 
 }
 
 .projectCard_additionalInfoTitle {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 150%;
     text-transform: uppercase;
@@ -79,7 +78,7 @@
 
 .projectCard_additionalInfoItem {
     display: flex;
-    padding: 16px 0;
+    padding: 1rem 0;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
@@ -88,7 +87,7 @@
 .projectCard_additionalInfoValue {
     color: var(--neutral-offwhite);
     font-family: "Manrope-Medium", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
     line-height: 160%;
@@ -97,7 +96,7 @@
 .projectCard_links {
     display: flex;
     align-items: flex-start;
-    gap: 24px;
+    gap: 1.5rem;
 
 }
 
@@ -110,7 +109,7 @@
     background-color: #0A0A0A;
     border: none;
     font-family: "Manrope-Bold", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
@@ -120,8 +119,8 @@
 }
 
 .projectCard_button img {
-    width: 26px;
-    height: 26px;
+    width: 1.6rem;
+    height: 1.6rem;
 }
 
 @media (max-width: 1024px) {
@@ -135,18 +134,21 @@
         width: 350px;
         height: 300px;
     }
+
     .projectCard_title {
-        font-size: 23px;
+        font-size: 1.4rem;
     }
+
     .projectCard_description {
-        font-size: 16px;
+        font-size: 1rem;
     }
+
     .projectCard_details {
         gap: 10px;
     }
 
     .projectCard_additionalInfoTitle {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 600;
         text-transform: uppercase;
     }
@@ -157,10 +159,12 @@
         flex-direction: column;
         justify-content: flex-start;
     }
-    .projectCard_imageWrapper{
+
+    .projectCard_imageWrapper {
         width: 361px;
         height: 361px;
     }
+
     .projectCard_image {
         width: 320px;
         height: 300px;
