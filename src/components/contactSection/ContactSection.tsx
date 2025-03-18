@@ -51,10 +51,10 @@ const ContactSection = () => {
                     <p className={styles.contactSection_email}>
                         Say hello at <a href="mailto:svetlana.denisyuk@gmail.com">svetlana.denisyuk@gmail.com</a>
                     </p>
-                    <p className={styles.contactSection_email}>
-                        For more info, here's my <a href="https://drive.google.com/file/d/1J1YlzDs5EfCi60pUvW0F3Dte5h4FjTER/view?usp=sharing" target="_blank"
-                                                    rel="noopener noreferrer">CV</a>
-                    </p>
+                    {/*<p className={styles.contactSection_email}>*/}
+                    {/*    For more info, here's my <a href="#" target="_blank"*/}
+                    {/*                                rel="noopener noreferrer">CV</a>*/}
+                    {/*</p>*/}
                     <div className={styles.contactSection_socials}>
                         <div className={styles.wrapper_icon}>
                             <a href="https://www.linkedin.com/in/sveta-denisyuk/" target="_blank"
